@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact-container{
+  border:5px blue solid;
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact{
+    border-bottom: 2px blue solid;
+    padding: 5px;
+}
+.a{
+    padding-left: 32px;
+    padding-right: 32px;
+   
+}
+.list{
+    background-color: blue;
+}
+#users{
+    border-top:5px red solid ;
+    margin-top: 15px;
+}

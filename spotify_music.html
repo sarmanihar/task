@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <!--In online run the following link-""https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"".Then only sliders will work-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="spotify_music.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+    
+
+
+
+    <div class="container">
+        <!-- Slider main container -->
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide text" style="background-color: blueviolet;">
+                    <h6>1st time double tap on play button</h6>
+                    <small>Playing 1 of 3</small>
+                    <img src="images/playicon.webp" id="cd" class="img-fluid pb-5">
+                    <h1>Perfect</h1>
+                    <small>Ed Sheeren</small>
+
+                    <br>
+                    <button class="btn bg-dark text-white"><i class="bi-play"></i></button>
+                    <!--<i class="bi-play"></i>-->
+                    <div class="brightness-box">
+                        <i class="far fa-sun"></i>
+                        <input type="range" id="range" min="0" max="100" value="100">
+                        <i class="fas fa-sun"></i>
+                    </div>
+
+                    <br>
+                </div>
+                <div class="swiper-slide text" style="background-color: greenyellow"> <small>Playing 2 of 3</small>
+                    <img src="images/playicon.webp" id="cd" class="img-fluid pb-5">
+                    <h1>Love Me Like You Do</h1>
+                    <small>Ellie Goulding</small>
+                    <br>
+                    <button class="btn bg-dark text-white"><i class="bi-play"></i></button>
+                    <!--<i class="bi-play"></i>-->
+                    <div class="brightness-box">
+                        <i class="far fa-sun"></i>
+                        <input type="range" id="range" min="0" max="1" value="1">
+                        <i class="fas fa-sun"></i>
+                    </div>
+
+                   
+                    <br>
+                </div>
+                <div class="swiper-slide text" style="background-color: pink">
+                    <small>Playing 3 of 3</small>
+                    <img src="images/playicon.webp" id="cd"
+                        class="img-fluid pb-5">
+                    <h1>Let Me Love You</h1>
+                    <small>Justin bieber</small>
+                    <br>
+                    <button class="btn bg-dark text-white"><i class="bi-play"></i></button>
+                    <!--<i class="bi-play"></i>-->
+                    <div class="brightness-box">
+                        <i class="far fa-sun"></i>
+                        <input type="range" id="range" min="0" max="1" value="1">
+                        <i class="fas fa-sun"></i>
+                    </div>
+
+
+                    <br>
+                </div>
+
+            </div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="spotify_music.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+</body>
+
+</html>
