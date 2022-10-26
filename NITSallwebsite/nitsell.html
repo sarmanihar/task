@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>sell</title>
+    <link rel="stylesheet" href="nitsell.css" type="text/css" />
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <form>
+            <div>
+                <label>
+                Product
+            </label>
+                <input type="text" class="inp" size="50" placeholder="Write your Product">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label>
+                Write about the product
+            </label>
+                <br>
+                <br>
+                <textarea id="w3review" name="w3review" rows="10" cols="42">
+               
+            </textarea>
+            </div>
+            <div>
+                <br><b> <label>Choose your favroite season: </label></b><br>
+                <input type="radio" name="season" id="summer" value="Summer"> Summer <br>
+                <input type="radio" name="season" id="winter" value="Winter"> Winter <br>
+                <input type="radio" name="season" id="rainy" value="Rainy"> Rainy <br>
+                <input type="radio" name="season" id="autumn" value="Autumn"> Autumn
+                <br><br>
+
+                <button type="button" onclick=" checkButton()"> Submit </button>
+
+                <h3 id="disp" style="color:green"> </h3>
+                <h4 id="error" style="color:red"> </h4>
+            </div>
+            <div>
+                <label>
+                Selling Price
+            </label>
+                <input type="number">
+            </div>
+        </form>
+    </div>
+    <script>
+        function checkButton() {
+            var getSelectedValue = document.querySelector(
+                'input[name="season"]:checked');
+
+            if (getSelectedValue != null) {
+                document.getElementById("disp").innerHTML = getSelectedValue.value +
+                    " season is selected";
+            } else {
+                document.getElementById("error").innerHTML = "*You have not selected any season";
+            }
+        }
+    </script>
+</body>
+
+</html>
